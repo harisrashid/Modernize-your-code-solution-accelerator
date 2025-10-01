@@ -5,11 +5,11 @@ targetScope = 'resourceGroup'
 
 @minLength(3)
 @maxLength(16)
-@description('Required. A unique application/solution name for all resources in this deployment. This should be 3-16 characters long.')
+@description('VS-hrashid@gn.com 2')
 param solutionName string
 
 @maxLength(5)
-@description('Optional. A unique token for the solution. This is used to ensure resource names are unique for global resources. Defaults to a 5-character substring of the unique string generated from the subscription ID, resource group name, and solution name.')
+@description('Modernize SQL code using AI')
 param solutionUniqueToken string = substring(uniqueString(subscription().id, resourceGroup().name, solutionName), 0, 5)
 
 @minLength(3)
